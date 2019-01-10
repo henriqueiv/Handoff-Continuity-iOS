@@ -1,25 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yuV-8o-zOs">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="SAJ-qi-N40">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yuV-8o-zOs" customClass="ViewController" customModule="HandoffContinuity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="YoJ-Fe-noQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="G4R-sU-SSO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="l44-b0-lh6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your note" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="91W-ui-yc9">
+                                <rect key="frame" x="20" y="66" width="560" height="514"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.49019607840000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTa-iv-Avg">
+                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BUt-JA-rbY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="91W-ui-yc9" firstAttribute="top" secondItem="pTa-iv-Avg" secondAttribute="bottom" constant="8" id="6Xk-6m-sfb"/>
+                            <constraint firstItem="pTa-iv-Avg" firstAttribute="top" secondItem="YoJ-Fe-noQ" secondAttribute="bottom" constant="8" id="6wM-XO-NcN"/>
+                            <constraint firstAttribute="trailing" secondItem="91W-ui-yc9" secondAttribute="trailing" constant="20" id="Etg-Dj-kyw"/>
+                            <constraint firstItem="91W-ui-yc9" firstAttribute="leading" secondItem="l44-b0-lh6" secondAttribute="leading" constant="20" id="N6D-Zp-zLB"/>
+                            <constraint firstItem="G4R-sU-SSO" firstAttribute="top" secondItem="91W-ui-yc9" secondAttribute="bottom" constant="20" id="cd1-gc-BxC"/>
+                            <constraint firstAttribute="trailing" secondItem="pTa-iv-Avg" secondAttribute="trailing" constant="20" id="r9E-UK-6Bn"/>
+                            <constraint firstItem="pTa-iv-Avg" firstAttribute="leading" secondItem="l44-b0-lh6" secondAttribute="leading" constant="20" id="xNb-25-Ynk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentTextField" destination="91W-ui-yc9" id="hD8-P1-bGz"/>
+                        <outlet property="titleTextField" destination="pTa-iv-Avg" id="rcw-vt-aLI"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTR-Oz-PHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1236" y="351"/>
         </scene>
     </scenes>
 </document>

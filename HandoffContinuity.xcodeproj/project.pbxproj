@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					62E0C6481C814D420098C092 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8WCPHDZJPJ;
 					};
 				};
 			};
@@ -251,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HandoffContinuity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.henriquevalcanaia.HandoffContinuity;
@@ -262,6 +264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HandoffContinuity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.henriquevalcanaia.HandoffContinuity;
@@ -288,6 +291,7 @@
 				62E0C65D1C814D420098C092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
